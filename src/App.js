@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import { Toaster } from 'react-hot-toast';
 import './App.css';
+import MainSection from './components/MainSection';
+import Navbar from './components/Navbar';
+import { useState } from 'react';
 
 function App() {
+
+    const [progress, setProgress] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='h-[100vh] border-black relative w-[100%] customFont'>
+      <Navbar progress={progress} />
+      <MainSection setProgress={setProgress} />
+
+      <Toaster />
     </div>
   );
 }
