@@ -11,7 +11,7 @@ const DownloadSection = (props) => {
         setShowDownloadSection(false);   
     }
   return (
-    <div className='grid mt-[10vh] grid-cols-2 max-ipad:grid-cols-1 gap-5 max-ipad:mr-[10rem] max-md:mr-0  items-center max-md:gap-y-5 justify-center h-auto '>
+    <div className='grid mt-[10vh] grid-cols-2 max-ipad:grid-cols-1 gap-5 max-ipad:mr-[10rem] max-md:mr-0 items-center max-md:gap-y-5 justify-center h-auto '> 
       {
           mediaArr.map((items, key) => (
             <div key={key} className='flex flex-col gap-y-5 w-full h-full p-5 bg-[#DCF2F1] rounded-lg'>

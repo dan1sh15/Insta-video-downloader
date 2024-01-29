@@ -40,7 +40,7 @@ const Downloader = (props) => {
             setProgress(75);
             console.log(result);
             if(data?.status === false) {
-                Toast.error("Failed to fetch data, please try again later");
+                Toast.error("Internal Server error, please try again later");
                 setLoading(false);
                 setProgress(100);
                 setShowDownloadSection(false);

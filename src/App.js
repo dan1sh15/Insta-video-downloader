@@ -9,7 +9,7 @@ function App() {
     const [progress, setProgress] = useState(0);
 
   return (
-    <div className='h-[100vh] border-black relative w-[100%] customFont'>
+    <div className='h-[100vh] border-black relative w-[100%] customFont bg-[#7FC7D9]'>
       <Navbar progress={progress} />
       <MainSection setProgress={setProgress} />
 
